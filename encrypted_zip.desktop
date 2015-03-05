@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Service
+Actions=encrypt_zip;
+Icon=dialog-password
+Encoding=UTF-8
+ServiceTypes=KonqPopupMenu/Plugin,all/all
+X-KDE-Priority=TopLevel
+X-KDE-Submenu=Sécurité
+X-KDE-Submenu[fr]=Sécurité
+
+[Desktop Action encrypt_zip]
+Exec=encrypt_compress.sh %u
+Icon=dialog-password
+Name=Compress into an encrypted archive
+Name[fr]=Compresser dans une archive chiffrée

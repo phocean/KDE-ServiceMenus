@@ -1,0 +1,28 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=all/all;
+Icon=dialog-ok
+Actions=checkmd5;sha1sum;sha256sum;sha512sum;
+TryExec=sha256sum
+X-KDE-Priority=TopLevel
+X-KDE-Submenu=Security
+X-KDE-Submenu[fr]=Sécurité
+
+[Desktop Action checkmd5]
+Name=Compute md5 fingerprint
+Name[fr]=Calculer l'empreinte md5
+Icon=dialog-ok
+Exec=kdialog --title "md5" --msgbox "`md5sum %F | awk '{print $1}'`"
+
+[Desktop Action sha1sum]
+Name=Compute sha1 fingerprint
+Name[fr]=Calculer l'empreinte sha1
+Icon=dialog-ok
+Exec=kdialog --title "sha1" --msgbox "`sha1sum %F | awk '{print $1}'`"
+
+[Desktop Action sha256sum]
+Name=Compute sha256 fingerprint
+Name[fr]=Calculer l'empreinte sha256
+Icon=dialog-ok
+Exec=kdialog --title "sha256" --msgbox "`sha256sum %F | awk '{print $1}'`"

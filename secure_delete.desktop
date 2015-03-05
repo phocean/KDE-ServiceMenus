@@ -1,0 +1,22 @@
+[Desktop Entry]
+Type=Service
+Actions=secure_delete;
+Icon=draw-eraser
+Actions=del_fast;del_slow;
+Encoding=UTF-8
+ServiceTypes=KonqPopupMenu/Plugin,all/all
+X-KDE-Priority=TopLevel
+X-KDE-Submenu=Sécurité
+X-KDE-Submenu[fr]=Sécurité
+
+[Desktop Action del_fast]
+Exec=srm -rf %u
+Icon=draw-eraser
+Name=Secure delete (fast)
+Name[fr]=Effacement sécurisé (rapide)
+
+[Desktop Action del_slow]
+Exec=srm -rfD %u
+Icon=draw-eraser
+Name=Secure delete (slow)
+Name[fr]=Effacement sécurisé (lent)
