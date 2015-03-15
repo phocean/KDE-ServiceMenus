@@ -1,6 +1,5 @@
 [Desktop Entry]
 Type=Service
-Actions=secure_delete;
 Icon=draw-eraser
 Actions=del_fast;del_slow;
 Encoding=UTF-8

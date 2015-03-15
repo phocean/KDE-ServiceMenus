@@ -1,0 +1,16 @@
+[Desktop Entry]
+Type=Service
+Icon=edit-image-face-recognize
+Actions=del_exif;
+Encoding=UTF-8
+ServiceTypes=KonqPopupMenu/Plugin,image/*
+X-KDE-Priority=TopLevel
+X-KDE-Submenu=Sécurité
+X-KDE-Submenu[fr]=Sécurité
+
+[Desktop Action del_exif]
+Exec=exiftool -overwrite_original -all= %u && kdialog --title "EXIF Removal" --msgbox "EXIF metadata successfully removed"
+Exec[fr]=exiftool -overwrite_original -all= %u && kdialog --title "Suppression EXIF" --msgbox "Suppression réussie des métadonnées EXIF"
+Icon=edit-image-face-recognize
+Name=Remove EXIF metadata
+Name[fr]=Suppression des métadonnées EXIF
