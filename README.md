@@ -14,6 +14,6 @@ cp *.desktop ~/.kde/share/kde4/services/ServiceMenus
 
 KDE5:
 
-``
+```
 cp *.desktop $HOME/.local/share/kservices5/ServiceMenus
 ```
