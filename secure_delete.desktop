@@ -14,11 +14,11 @@ Exec=srm -rf %u
 Icon=draw-eraser
 Name=Secure delete (fast)
 Name[fr]=Effacement sécurisé (rapide)
-Name[nl=Veilig verwijderen (snel)
+Name[nl]=Veilig verwijderen (snel)
 
 [Desktop Action del_slow]
 Exec=srm -rfD %u
 Icon=draw-eraser
 Name=Secure delete (slow)
 Name[fr]=Effacement sécurisé (lent)
-Name[nl=Veilig verwijderen (langzaam)
+Name[nl]=Veilig verwijderen (langzaam)
