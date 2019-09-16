@@ -7,15 +7,18 @@ ServiceTypes=KonqPopupMenu/Plugin,all/all
 X-KDE-Priority=TopLevel
 X-KDE-Submenu=Sécurité
 X-KDE-Submenu[fr]=Sécurité
+X-KDE-Submenu[nl]=Veiligheid
 
 [Desktop Action del_fast]
 Exec=srm -rf %u
 Icon=draw-eraser
 Name=Secure delete (fast)
 Name[fr]=Effacement sécurisé (rapide)
+Name[nl]=Veilig verwijderen (snel)
 
 [Desktop Action del_slow]
 Exec=srm -rfD %u
 Icon=draw-eraser
 Name=Secure delete (slow)
 Name[fr]=Effacement sécurisé (lent)
+Name[nl]=Veilig verwijderen (langzaam)

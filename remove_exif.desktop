@@ -7,10 +7,13 @@ ServiceTypes=KonqPopupMenu/Plugin,image/*
 X-KDE-Priority=TopLevel
 X-KDE-Submenu=Sécurité
 X-KDE-Submenu[fr]=Sécurité
+X-KDE-Submenu[nl]=Veiligheid
 
 [Desktop Action del_exif]
 Exec=exiftool -overwrite_original -all= %u && kdialog --title "EXIF Removal" --msgbox "EXIF metadata successfully removed"
 Exec[fr]=exiftool -overwrite_original -all= %u && kdialog --title "Suppression EXIF" --msgbox "Suppression réussie des métadonnées EXIF"
+Exec[nl]=exiftool -overwrite_original -all= %u && kdialog --title "EXIF verwijderd" --msgbox "De EXIF-metagegevens zijn verwijderd."
 Icon=edit-image-face-recognize
 Name=Remove EXIF metadata
 Name[fr]=Suppression des métadonnées EXIF
+Name[nl]=EXIF-metagegevens verwijderen

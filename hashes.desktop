@@ -8,21 +8,25 @@ TryExec=sha256sum
 X-KDE-Priority=TopLevel
 X-KDE-Submenu=Security
 X-KDE-Submenu[fr]=Sécurité
+X-KDE-Submenu[nl]=Veiligheid
 
 [Desktop Action checkmd5]
 Name=Compute md5 fingerprint
 Name[fr]=Calculer l'empreinte md5
+Name[nl]=md5sum berekenen
 Icon=dialog-ok
 Exec=kdialog --title "md5" --msgbox "`md5sum %F | awk '{print $1}'`"
 
 [Desktop Action sha1sum]
 Name=Compute sha1 fingerprint
 Name[fr]=Calculer l'empreinte sha1
+Name[nl]=sha1sum berekenen
 Icon=dialog-ok
 Exec=kdialog --title "sha1" --msgbox "`sha1sum %F | awk '{print $1}'`"
 
 [Desktop Action sha256sum]
 Name=Compute sha256 fingerprint
 Name[fr]=Calculer l'empreinte sha256
+Name[nl]=sha256sum berekenen
 Icon=dialog-ok
 Exec=kdialog --title "sha256" --msgbox "`sha256sum %F | awk '{print $1}'`"
